@@ -4,7 +4,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-const showFlame = ref(false)
+const showFlame = ref(true)
 
 function switchFlame() {
     showFlame.value = !showFlame.value;
