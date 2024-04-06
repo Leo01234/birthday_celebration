@@ -1,9 +1,9 @@
 <script setup>
-import Cake from './components/Cake.vue'
+import BirthdayCake from './components/BirthdayCake.vue'
 </script>
 
 <template>
-  <Cake />
+  <BirthdayCake />
 </template>
 
 <style scoped>

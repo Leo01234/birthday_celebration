@@ -1,3 +1,6 @@
+<!-- https://codepen.io/fazlurr/pen/gPMJMK -->
+<!-- CSS Birthday Cake -->
+
 <script setup>
 </script>
 
@@ -19,10 +22,9 @@
 
 <style scoped lang="scss">
 
-  // https://codepen.io/fazlurr/pen/gPMJMK
-
   $vanilla: #f0e4d0;
-  $chocolate: #553c13;
+//   $chocolate: #553c13;
+  $pink: #ee9ca7;
 
 //   body {
 //       background-color: #333;
@@ -82,7 +84,7 @@
       width: 250px;
       height: 100px;
       border-radius: 50%;
-      @include foodColoring($chocolate);
+      @include foodColoring($pink);
   }
 
   .layer-top { top: 0px; }
