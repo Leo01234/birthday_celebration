@@ -25,6 +25,7 @@
   $vanilla: #f0e4d0;
 //   $chocolate: #553c13;
   $pink: #ee9ca7;
+  $flame-color: orange;
 
 //   body {
 //       background-color: #333;
@@ -169,7 +170,7 @@
 
   .flame {
       position: absolute;
-      background-color: orange;
+      background-color: $flame-color;
       width: 15px;
       height: 35px;
       border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
@@ -178,10 +179,10 @@
       margin-left: -7.5px;
       z-index: 10;
       box-shadow:
-          0 0 10px rgba(orange, 0.5),
-          0 0 20px rgba(orange, 0.5),
-          0 0 60px rgba(orange, 0.5),
-          0 0 80px rgba(orange, 0.5);
+          0 0 10px rgba($flame-color, 0.5),
+          0 0 20px rgba($flame-color, 0.5),
+          0 0 60px rgba($flame-color, 0.5),
+          0 0 80px rgba($flame-color, 0.5);
       transform-origin: 50% 90%;
       animation: flicker 1s ease-in-out alternate infinite;
   }
@@ -190,37 +191,37 @@
       0% {
           transform: skewX(5deg);
           box-shadow: 
-              0 0 10px rgba(orange, 0.2),
-              0 0 20px rgba(orange, 0.2),
-              0 0 60px rgba(orange, 0.2),
-              0 0 80px rgba(orange, 0.2) }
+              0 0 10px rgba($flame-color, 0.2),
+              0 0 20px rgba($flame-color, 0.2),
+              0 0 60px rgba($flame-color, 0.2),
+              0 0 80px rgba($flame-color, 0.2) }
       25% {
           transform: skewX(-5deg);
           box-shadow:
-              0 0 10px rgba(orange, 0.5),
-              0 0 20px rgba(orange, 0.5),
-              0 0 60px rgba(orange, 0.5),
-              0 0 80px rgba(orange, 0.5) }
+              0 0 10px rgba($flame-color, 0.5),
+              0 0 20px rgba($flame-color, 0.5),
+              0 0 60px rgba($flame-color, 0.5),
+              0 0 80px rgba($flame-color, 0.5) }
       50% {
           transform: skewX(10deg);
           box-shadow:
-              0 0 10px rgba(orange, 0.3),
-              0 0 20px rgba(orange, 0.3),
-              0 0 60px rgba(orange, 0.3),
-              0 0 80px rgba(orange, 0.3) }
+              0 0 10px rgba($flame-color, 0.3),
+              0 0 20px rgba($flame-color, 0.3),
+              0 0 60px rgba($flame-color, 0.3),
+              0 0 80px rgba($flame-color, 0.3) }
       75% {
           transform: skewX(-10deg);
           box-shadow:
-              0 0 10px rgba(orange, 0.4),
-              0 0 20px rgba(orange, 0.4),
-              0 0 60px rgba(orange, 0.4),
-              0 0 80px rgba(orange, 0.4) }
+              0 0 10px rgba($flame-color, 0.4),
+              0 0 20px rgba($flame-color, 0.4),
+              0 0 60px rgba($flame-color, 0.4),
+              0 0 80px rgba($flame-color, 0.4) }
       100% {
           transform: skewX(5deg);
           box-shadow:
-              0 0 10px rgba(orange, 0.5),
-              0 0 20px rgba(orange, 0.5),
-              0 0 60px rgba(orange, 0.5),
-              0 0 80px rgba(orange, 0.5) }
+              0 0 10px rgba($flame-color, 0.5),
+              0 0 20px rgba($flame-color, 0.5),
+              0 0 60px rgba($flame-color, 0.5),
+              0 0 80px rgba($flame-color, 0.5) }
   }
 </style>
