@@ -2,6 +2,20 @@
 <!-- CSS Birthday Cake -->
 
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const showFlame = ref(false)
+
+function switchFlame() {
+    showFlame.value = !showFlame.value;
+}
+onMounted(() => {
+    document.addEventListener('click', switchFlame);
+})
+onBeforeUnmount(() => {
+    document.removeEventListener('click', switchFlame);
+})
+
 </script>
 
 <template>
@@ -15,7 +29,7 @@
       <div class="drip drip2"></div>
       <div class="drip drip3"></div>
       <div class="candle">
-          <div class="flame"></div>
+          <div class="flame" v-show="showFlame"></div>
       </div>
   </div>
 </template>
