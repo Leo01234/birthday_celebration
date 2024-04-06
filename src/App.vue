@@ -4,9 +4,14 @@ import CelebrationAnimation from './components/CelebrationAnimation.vue'
 </script>
 
 <template>
-  <BirthdayCake />
+  <div class="birthday-cake">
+    <BirthdayCake />
+  </div>
   <CelebrationAnimation />
 </template>
 
 <style scoped>
+  .birthday-cake {
+
+  }
 </style>
